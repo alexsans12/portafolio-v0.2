@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+  Web Developer: Eddy Alexander
+  Twitter: @Alexsans_0
+  From: Guatemala
+
+# THANKS
+  Pet: Spike
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
