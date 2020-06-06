@@ -155,7 +155,7 @@ img {
 
 /*  Header  */
 div.content-header {
-  padding-top: 15vh;
+  padding-top: 22vh;
   position: relative;
   text-align: center;
 }
@@ -191,7 +191,6 @@ div.content-header .info-header {
 
 @media only screen and (min-width: 768px) {
   div.content-header {
-    padding-top: 23vh;
     text-align: left;
   }
   div.content-header h1 {
@@ -220,7 +219,10 @@ div.hero {
 .hero::before {
   content: '';
   position: absolute;
-  opacity: 65%;
+  opacity: 0.65; /* Standard compliant browsers */
+  -moz-opacity: 0.65; /* Firefox and Mozilla browsers */
+  -webkit-opacity: 0.65; /* WebKit browser e.g. Safari */
+  filter: alpha(opacity=65); /* For IE8 and earlier */
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
