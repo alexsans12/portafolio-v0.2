@@ -136,7 +136,7 @@ img {
 }
 
 .btn {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -144,29 +144,26 @@ img {
   text-decoration: none;
   padding: 10px 40px;
   cursor: pointer;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--primary-color);
   transition: all .4s ease;
 }
 
 .btn:hover {
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /*  Header  */
 div.content-header {
-  padding-top: 25vh;
+  padding-top: 15vh;
   position: relative;
   text-align: center;
 }
 
 div.content-header h1 {
-  border-radius: 5px;
   color: #ffffff;
+  font-size: 2em;
   margin: 0 25px;
-  margin-bottom: 40px;
-  background-color: white;
-  font-size: 2.5em;
 }
 
 div.content-header h1 span {
@@ -174,8 +171,9 @@ div.content-header h1 span {
 }
 
 div.content-header p {
-  font-size: 1.5em;
-  letter-spacing: 2px;
+  font-size: 1.2em;
+  padding: 5px;
+  color: white;
 }
 
 div.content-header p span:first-child {
@@ -186,63 +184,46 @@ div.content-header p span:last-child {
   font-weight: bold;
 }
 
-div.content-header .card {
-  background-color: #ffffff;
+div.content-header .info-header {
   margin: 0 20px;
-  padding: 1px 5px 20px 5px;
-  border-radius: 5px;
+  padding-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   div.content-header {
-    padding-top: 7em;
-    padding-right: 40px;
+    padding-top: 23vh;
     text-align: left;
   }
-  .hero {
-    position: relative;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    opacity: 65%;
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
-  }
   div.content-header h1 {
-    letter-spacing: 4px;
-    background-color: transparent;
+    letter-spacing: 3px;
     font-size: 3em;
     font-weight: 700;
   }
   div.content-header p {
-    padding: 5px;
-    color: white;
+    font-size: 1.6em;
+    letter-spacing: 2px;
   }
-  div.content-header .card {
-    float: left;
-    background-color: transparent;
-  }
-}
-
-@media only screen and (max-width: 320px) and (orientation: landscape) {
-  div.content-header p {
-    font-size: 2em;
-  }
-
-  div.content-header p span {
-    background-color: var(--secondary-color);
+  div.card input[submit] {
+    margin-left: 5px;
   }
 }
 
 /*  Hero  */
-
 div.hero {
   background-image: url(../img/hero-min.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  opacity: 65%;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -269,11 +250,6 @@ div.hero {
   border-bottom: 2px solid transparent;
   transition: all 0.4s ease;
 }
-
-/*
-.main-nav a:first-child {
-  border-bottom: 2px solid var(--secondary-color);
-}*/
 
 
 @media only screen and (min-width: 768px) {
