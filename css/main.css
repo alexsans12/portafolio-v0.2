@@ -282,16 +282,7 @@ div.hero {
     padding-right: 25px;
     display: block;
     backdrop-filter: blur(2.5px);
-  }
-
-  .main-nav::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 49px;
-    z-index: -1;
-    border: 1.2px solid #ffffff;
-    width: 100%;
+    border-bottom: 2px solid #ffffff;
   }
 
   .main-nav a {
@@ -305,10 +296,11 @@ div.hero {
   .main-nav a::before {
     content: '';
     position: absolute;
-    top: 49px;
+    top: 51px;
     left: 0;
     width: 100%;
     height: 2px;
+    z-index: 1;
     overflow: hidden;
     background-color: var(--secondary-color);
     transition: all 0.4s ease;
