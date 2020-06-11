@@ -4,11 +4,11 @@ let menuOpen = false;
 mobileNav.addEventListener('click', () => {
   if(!menuOpen) {
     mobileNav.classList.add('open');
-    mainMobile.setAttribute('style', 'left: 0');
+    mainMobile.setAttribute('style', 'right: 0');
     menuOpen = true;
   } else {
     mobileNav.classList.remove('open');
-    mainMobile.setAttribute('style', 'left: 100vw');
+    mainMobile.setAttribute('style', 'right: 100vw');
     menuOpen = false;
   }
 });

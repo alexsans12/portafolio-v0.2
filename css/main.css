@@ -302,7 +302,7 @@ div.hero {
     z-index: 1;
     height: 100vh;
     top: 0;
-    left: 100vw;
+    right: 100vw;
     display: block;
     padding-top: 40px;
     background-color: var(--primary-color);
@@ -364,15 +364,15 @@ div.menu-burger::after {
 
 /* ====== Animation mobile nav ====== */
 .mobile-nav.open .menu-burger {
-  transform: translateX(50px);
+  transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
 }
 .mobile-nav.open .menu-burger::before {
-  transform: rotate(45deg) translate(-35px, 35px);
+  transform: rotate(45deg) translate(35px, -35px);
 }
 .mobile-nav.open .menu-burger::after {
-  transform: rotate(-45deg) translate(-35px, -35px);
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 @media only screen and (min-width: 768px) {
