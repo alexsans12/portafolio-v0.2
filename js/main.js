@@ -1,14 +1,23 @@
-const mobileNav = document.querySelector(".mobile-nav");
-const mainMobile = document.querySelector(".main-mobile");
+const mobileMenu = document.querySelector(".main-mobile__menu");
+const mainMenu = document.querySelector(".main-menu");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 let menuOpen = false;
-mobileNav.addEventListener('click', () => {
+
+mobileMenu.addEventListener('click', () => {
   if(!menuOpen) {
-    mobileNav.classList.add('open');
-    mainMobile.setAttribute('style', 'right: 0');
+    mobileMenu.classList.add('main-mobile__menu--open');
+    mobileMenu.classList.add('fixed');
+    mainMenu.setAttribute('style', 'right: 0; display: block');
+    main.classList.add('hidden');
+    footer.classList.add('hidden');
     menuOpen = true;
   } else {
-    mobileNav.classList.remove('open');
-    mainMobile.setAttribute('style', 'right: 100vw');
+    mobileMenu.classList.remove('main-mobile__menu--open');
+    mobileMenu.classList.remove('fixed');
+    mainMenu.setAttribute('style', 'right: 100vw');
+    main.classList.remove('hidden');
+    footer.classList.remove("hidden");
     menuOpen = false;
   }
 });
