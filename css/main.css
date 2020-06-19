@@ -248,6 +248,10 @@ body {
   transition: all 0.4s ease;
 }
 
+.main-menu.main-menu--open {
+  right: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .main-menu {
     text-align: right;
@@ -405,8 +409,8 @@ body {
   display: none !important;
 }
 
-.fixed {
-  position: fixed !important;
+.overflow {
+  overflow: hidden;
 }
 
 /*
