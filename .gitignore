@@ -5,3 +5,6 @@
 doc
 .editorconfig
 .idea
+.DS_Store
+.htaccess
+.gitattributes
